@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="0804_first"/>
+<aop-project name="0804_model"/>
+<aop-project name="0804_data"/>
+<aop-project name="0804_hello"/>
+</aop-reference-model>
