@@ -2,6 +2,9 @@
 <aop-reference-model>
 <aop-project name="0804_first"/>
 <aop-project name="0804_model"/>
+<aop-project name="0805_folder"/>
 <aop-project name="0804_data"/>
 <aop-project name="0804_hello"/>
+<aop-project name="0805_redirect"/>
+<aop-project name="0805_board"/>
 </aop-reference-model>

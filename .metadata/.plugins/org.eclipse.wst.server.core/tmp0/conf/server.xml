@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\hello" path="/hello" reloadable="true" source="org.eclipse.jst.jee.server:hello"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\data" path="/data" reloadable="true" source="org.eclipse.jst.jee.server:data"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\model" path="/model" reloadable="true" source="org.eclipse.jst.jee.server:model"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\first" path="/first" reloadable="true" source="org.eclipse.jst.jee.server:first"/></Host>
+      <Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0805_board" path="/board" reloadable="true" source="org.eclipse.jst.jee.server:0805_board"/></Host>
     </Engine>
   </Service>
 </Server>
