@@ -1,0 +1,15 @@
+<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<beans:property name="url" value="jdbc:mysql://localhost:3306/db명" />
+		<beans:property name="username" value="root" />
+		<beans:property name="password" value="1234" />
+	</beans:bean>
+	
+	<beans:bean name="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	   <beans:property name="dataSource" ref="dataSource"></beans:property>
+	   <beans:property name="mapperLocations" value="classpath:kr/co/db_batis1/mapper/*.xml"></beans:property>	                                                                              
+	</beans:bean>
+	
+	<beans:bean name="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+	    <beans:constructor-arg ref="sqlSessionFactory"></beans:constructor-arg>
+	</beans:bean>
