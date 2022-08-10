@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0808_batis_board" path="/batis_board" reloadable="true" source="org.eclipse.jst.jee.server:0808_batis_board"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0809_mapper_test" path="/mapper_test" reloadable="true" source="org.eclipse.jst.jee.server:0809_mapper_test"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0809_batis_board2" path="/batis_board2" reloadable="true" source="org.eclipse.jst.jee.server:0809_batis_board2"/></Host>
+      <Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\spring\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\0810_board_page" path="/board_page" reloadable="true" source="org.eclipse.jst.jee.server:0810_board_page"/></Host>
     </Engine>
   </Service>
 </Server>

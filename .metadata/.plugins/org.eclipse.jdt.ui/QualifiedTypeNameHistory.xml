@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -16,7 +15,6 @@
 <fullyQualifiedTypeName name="kr.co.batis_board.dao.BoardDao"/>
 <fullyQualifiedTypeName name="kr.co.batis_board.dto.BoardDto"/>
 <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="kr.co.mapper_test.boarddao.BoardDao"/>
 <fullyQualifiedTypeName name="kr.co.mapper_test.boarddto.BoardDto"/>
 <fullyQualifiedTypeName name="kr.co.mapper_test.gongjidao.GongjiDao"/>
@@ -27,13 +25,17 @@
 <fullyQualifiedTypeName name="kr.co.batis_board2.boarddto.BoardDto"/>
 <fullyQualifiedTypeName name="kr.co.batis_board2.gongjidao.GongjiDao"/>
 <fullyQualifiedTypeName name="kr.co.batis_board2.gongjidto.GongjiDto"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
+<fullyQualifiedTypeName name="kr.co.batis_board2.tourdao.TourDao"/>
+<fullyQualifiedTypeName name="kr.co.batis_board2.tourdto.TourDto"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.jdbc.SQL"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
-<fullyQualifiedTypeName name="kr.co.batis_board2.tourdao.TourDao"/>
-<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="kr.co.board_page.dao.BoardDao"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="kr.co.batis_board2.tourdto.TourDto"/>
+<fullyQualifiedTypeName name="kr.co.board_page.dto.BoardDto"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>

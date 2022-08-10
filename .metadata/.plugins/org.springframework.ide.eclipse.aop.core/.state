@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="0808_autowired"/>
-<aop-project name="0804_first"/>
-<aop-project name="0804_model"/>
+<aop-project name="0810_board_page"/>
 <aop-project name="0809_batis_board2"/>
-<aop-project name="0805_folder"/>
-<aop-project name="0809_mapper_test"/>
-<aop-project name="0804_data"/>
-<aop-project name="0804_hello"/>
 <aop-project name="0808_batis_board"/>
 <aop-project name="0805_board"/>
 <aop-project name="0805_redirect"/>
+<aop-project name="0808_autowired"/>
+<aop-project name="0804_first"/>
+<aop-project name="0810_resources"/>
+<aop-project name="0804_model"/>
+<aop-project name="0805_folder"/>
+<aop-project name="0809_mapper_test"/>
+<aop-project name="0804_hello"/>
+<aop-project name="0804_data"/>
 </aop-reference-model>
