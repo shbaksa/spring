@@ -13,4 +13,5 @@
 <aop-project name="0809_mapper_test"/>
 <aop-project name="0804_hello"/>
 <aop-project name="0804_data"/>
+<aop-project name="0811_login"/>
 </aop-reference-model>

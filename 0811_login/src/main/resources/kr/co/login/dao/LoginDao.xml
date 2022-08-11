@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybats-3-mapper.dtd">
+  
+<mapper namespace="kr.co.login.dao.LoginDao">
+
+	<!-- <insert id="" resultType="">
+	
+	</insert>
+	
+	
+	<update id="">
+	
+	</update>
+	
+	<delete id="">
+	
+	</delete> -->
+	
+	
+	<select id="login_ok" resultType="kr.co.login.dto.LoginDto">
+		select count(*) as num,userid,name from member where userid=#{userid} and pwd=#{pwd}
+	</select>
+	
+	<select id="userid_check" resultType="Integer">
+		select count(*) from member where userid=#{param1}
+	</select>
+	
+	<insert id="member_input" parameterType="kr.co.login.dto.LoginDto">
+		insert into member(userid,name,pwd,phone,email,writeday) values(#{userid},#{name},#{pwd},#{phone},#{email},now())
+	</insert>
+	
+	<!-- <select id="userid_search" resultType="String">
+		select userid from member where name=#{name} and phone=#{phone}
+	</select>
+	
+	<select id="pwd_search" resultType="String">
+		select pwd from member where userid=#{userid} and name=#{name} and phone=#{phone}
+	</select> -->
+	
+	<!-- <select id="userid_search" resultType="kr.co.login.dto.LoginDto">
+		select count(*) as num, userid from member where name=#{param1} and phone=#{param2}
+	</select> -->
+	
+	<select id="userid_search" resultType="String">
+		select userid from member where name=#{name} and phone=#{phone}
+	</select>
+	
+	<select id="pwd_search" resultType="kr.co.login.dto.LoginDto">
+		select count(*) as num, pwd from member where userid=#{param1} and name=#{param2} and phone=#{param3}
+	</select>
+
+</mapper>

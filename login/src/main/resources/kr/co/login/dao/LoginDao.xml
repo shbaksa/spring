@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybats-3-mapper.dtd">
+<mapper namespace="kr.co.login.dao.LoginDao">
+  <select id="userid_check" resultType="Integer">
+    select count(*) from member where userid=#{param1}
+  </select>
+  
+  <insert id="member_input_ok" parameterType="kr.co.login.dto.LoginDto">
+    insert into member(userid,name,pwd,email,phone,writeday)
+    values(#{userid},#{name},#{pwd},#{email},#{phone},now())
+  </insert>
+  
+  <select id="login_ok" parameterType="kr.co.login.dto.LoginDto" resultType="kr.co.login.dto.LoginDto">
+    select * from member where userid=#{userid} and pwd=#{pwd}
+  </select>
+  
+  <select id="userid_search_ok" resultType="String">
+    select userid from member where name=#{name} and email=#{email}
+  </select>
+  
+  <select id="pwd_search_ok" resultType="String">
+    select pwd from member where userid=#{userid} and name=#{name} and email=#{email}
+  </select>
+</mapper>
