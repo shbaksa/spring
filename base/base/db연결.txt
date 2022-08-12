@@ -19,7 +19,7 @@
 	
 	<beans:bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<beans:property name="url" value="jdbc:mysql://localhost:3306/pension" />
+		<beans:property name="url" value="jdbc:mysql://localhost:3306/DB명" />
 		<beans:property name="username" value="root" />
 		<beans:property name="password" value="1234" />
 	</beans:bean>
@@ -32,4 +32,4 @@
 	    <beans:constructor-arg ref="sqlSessionFactory"></beans:constructor-arg>
 	</beans:bean>
 	
-	<mybatis-spring:scan base-package="kr.co.batis_board2"/>
+	<mybatis-spring:scan base-package="kr.co.프로젝트명"/>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybats-3-mapper.dtd">
+  
+<mapper namespace="kr.co.tt.dao.TourDao">
+
+	<insert id="write_ok" parameterType="kr.co.tt.dto.TourDto">
+		insert into tour(title,content,fname,userid,writeday) values(#{title},#{content},#{fname},1,now())
+	</insert>
+	
+	<select id="list" resultType="kr.co.tt.dto.TourDto">
+		select * from tour order by id desc	
+	</select>
+	
+	<update id="readnum">
+		update tour set readnum=readnum+1 where id=#{param1}
+	</update>
+	
+	<select id="content" resultType="kr.co.tt.dto.TourDto">
+		select * from tour where id=#{param1}
+	</select>
+	
+	<delete id="delete">
+		delete from tour where id=#{param1}
+	</delete>
+	
+	<select id="update" resultType="kr.co.tt.dto.TourDto">
+		select * from tour where id=#{param1}
+	</select>
+	
+	<update id="update_ok" parameterType="kr.co.tt.dto.TourDto">
+		update tour set title=#{title}, content=#{content}, fname=#{fname} where id=#{id};
+	</update>
+</mapper>
