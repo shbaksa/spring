@@ -17,6 +17,7 @@ public class BoardServiceImpl implements BoardService {
 
 	@Autowired
 	private BoardDao bdao;
+	//private SqlSession sqlSession;
    
 	@Override
 	public String list(Model model) {

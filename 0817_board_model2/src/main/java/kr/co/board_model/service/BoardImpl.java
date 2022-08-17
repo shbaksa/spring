@@ -18,12 +18,13 @@ import kr.co.board_model.dto.BoardDto;
 public class BoardImpl implements BoardService {
 	
 	@Autowired
-	private SqlSession sqlSession;
+	private BoardDao bdao;
+	//private SqlSession sqlSession;
 	
 	@Override
 	public String list(Model model){
 		
-		BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+		//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 		
 		ArrayList<BoardDto> list = bdao.list();
 		model.addAttribute("list",list);
@@ -34,7 +35,7 @@ public class BoardImpl implements BoardService {
 	@Override
 	public String readnum(HttpServletRequest request) {
 		
-		BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+		//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 		
 		bdao.readnum(request.getParameter("id"));
 		
@@ -48,7 +49,7 @@ public class BoardImpl implements BoardService {
 		if(request.getParameter("chk")!=null)
 			chk=1;
 		
-		BoardDao bdao = sqlSession.getMapper(BoardDao.class);		
+		//BoardDao bdao = sqlSession.getMapper(BoardDao.class);		
 		BoardDto bdto = bdao.content(request.getParameter("id"));		
 		bdto.setContent(bdto.getContent().replace("\r\n", "<br>"));
 		model.addAttribute("bdto",bdto);
@@ -60,7 +61,7 @@ public class BoardImpl implements BoardService {
 	@Override
 	public String getPwd(int id) {
 		
-		BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+		//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 		String dbpwd = bdao.getPwd(id);
 		
 		return dbpwd;
@@ -73,7 +74,7 @@ public class BoardImpl implements BoardService {
 		if(request.getParameter("chk")!=null)
 			chk=1;
 		
-		BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+		//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 		BoardDto bdto = bdao.update(request.getParameter("id"));
 		model.addAttribute("bdto",bdto);
 		model.addAttribute("chk",chk);
@@ -89,7 +90,7 @@ public class BoardImpl implements BoardService {
 		String pwd = request.getParameter("pwd");
 				
 		if(pwd.equals(dbpwd)) {
-			BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+			//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 			bdao.update_ok(bdto);
 			return "redirect:/content?id="+id;
 		}
@@ -105,7 +106,7 @@ public class BoardImpl implements BoardService {
 		String pwd = request.getParameter("pwd");
 		
 		if(pwd.equals(dbpwd)) {
-			BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+			//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 			bdao.delete(id);
 			return "redirect:/list";
 		}
@@ -116,7 +117,7 @@ public class BoardImpl implements BoardService {
 	@Override
 	public String write_ok(BoardDto bdto) {
 		
-		BoardDao bdao = sqlSession.getMapper(BoardDao.class);
+		//BoardDao bdao = sqlSession.getMapper(BoardDao.class);
 		bdao.write_ok(bdto);
 		
 		return "redirect:/list";
