@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="0816_include"/>
 <aop-project name="0812_tt"/>
 <aop-project name="0810_board_page"/>
 <aop-project name="0809_batis_board2"/>
+<aop-project name="0817_board_model2"/>
 <aop-project name="0808_batis_board"/>
 <aop-project name="0805_board"/>
 <aop-project name="0805_redirect"/>
@@ -10,9 +12,12 @@
 <aop-project name="0804_first"/>
 <aop-project name="0810_resources"/>
 <aop-project name="0804_model"/>
+<aop-project name="0817_board_model1"/>
 <aop-project name="0805_folder"/>
 <aop-project name="0809_mapper_test"/>
-<aop-project name="0804_hello"/>
 <aop-project name="0804_data"/>
+<aop-project name="0804_hello"/>
+<aop-project name="0816_qulifier"/>
+<aop-project name="0816_sitemesh"/>
 <aop-project name="0811_login"/>
 </aop-reference-model>
