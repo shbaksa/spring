@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="0818_board_model3"/>
 <aop-project name="0810_board_page"/>
 <aop-project name="0812_tt"/>
 <aop-project name="0816_include"/>

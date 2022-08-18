@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybats-3-mapper.dtd">
+
+<mapper namespace="kr.co.board_model.mapper.BoardMapper">
+
+	<select id="list" resultType="kr.co.board_model.vo.BoardVo">
+		select * from board order by id desc
+	</select>
+	
+	<insert id="write_ok" parameterType="kr.co.board_model.vo.BoardVo">
+		insert into board(title,pwd,content,userid,writeday) values(#{title},#{pwd},#{content},#{userid},now())
+	</insert>
+	
+	<update id="readnum">
+		update board set readnum=readnum+1 where id = #{param1}
+	</update>
+
+	<select id="content" resultType="kr.co.board_model.vo.BoardVo">
+		select * from board where id = #{param1}
+	</select>
+
+	<select id="update" resultType="kr.co.board_model.vo.BoardVo">
+		select * from board where id = #{param1}
+	</select>
+
+	<update id="update_ok" parameterType="kr.co.board_model.vo.BoardVo">
+		update board set title=#{title} , content=#{content} where id = #{id}
+	</update>
+
+	<delete id="delete">
+		delete from board where id = #{param1}
+	</delete>
+
+	<select id="getPwd" resultType="String">
+		select pwd from board where id = #{param1}
+	</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</mapper>
