@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybats-3-mapper.dtd">
+  
+<mapper namespace="kr.co.page.mapper.PageMapper">
+
+	<select id="getChong" resultType="Integer">
+		select ceil(count(*)/#{param1}) from board1 where ${param2} like concat('%',#{param3},'%')
+	</select>
+	
+	<select id="list" resultType="kr.co.page.vo.PageVo">
+		select * from board1 where ${param1} like concat('%',#{param2},'%') order by id desc limit #{param3},#{param4}
+		<!-- select * from board1 order by id desc limit #{index},#{pcnt} -->
+	</select>
+
+	<update id="readnum">
+		update board1 set readnum=readnum+1 where id = #{param1}
+	</update>
+
+	<select id="content" resultType="kr.co.page.vo.PageVo">
+		select * from board1 where id = #{param1}
+	</select>
+
+	<select id="update" resultType="kr.co.page.vo.PageVo">
+		select * from board1 where id = #{param1}	
+	</select>
+	
+	<update id="update_ok" parameterType="kr.co.page.vo.PageVo">
+		update board1 set title=#{title}, name=#{name}, content=#{content} where id = #{id}
+	</update>
+	
+	<delete id="delete">
+		delete from board1 where id=#{param1}
+	</delete>
+	
+	<select id="getDBPwd" resultType="String">
+		select pwd from board1 where id = #{param1}
+	</select>
+	
+	<insert id="write_ok" parameterType="kr.co.page.vo.PageVo">
+		insert into board1(title,name,pwd,content,writeday) values(#{title},#{name},#{pwd},#{content},now())
+	</insert>
+	
+</mapper>

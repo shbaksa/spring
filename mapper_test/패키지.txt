@@ -1,0 +1,29 @@
+kr.co.mapper_test :  top-level
+
+boardcontroller
+boarddao
+boarddto
+boardmapper
+
+gongjicontroller
+gongjidao
+gongjidto
+gongjimapper
+
+tourcontroller
+tourdao
+tourdto
+tourmapper
+
+패키지 생성후 
+1 pom.xml batis를 사용하기 위해 추가
+2. servlet-context.xml에 정보추가
+3. mapper xml파일에 정보추가
+
+4. list생성후 controller,dao,dto를 추가
+               
+
+
+
+
+

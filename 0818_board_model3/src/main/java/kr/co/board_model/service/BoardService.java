@@ -22,32 +22,7 @@ public interface BoardService {
 	
 	public String delete(BoardVo bvo);
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	

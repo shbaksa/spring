@@ -1,0 +1,4 @@
+1.pom.xml에 라이브러리 추가
+2. web.xml한글설정
+3. servlet-context.xml 에 db정보batis관련 복사
+   (mapperLocation을 삭제)
