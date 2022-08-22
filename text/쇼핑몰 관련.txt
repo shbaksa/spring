@@ -1,0 +1,88 @@
+1. 레이아웃
+
+2. 상품등록 ( 관리자 페이지 부분 )
+
+3. 메인페이지 작성 
+
+4. 상품리스트 출력 → 상품을 선택 → 구매 및 장바구니 → 결제와 배송 → 주문관련 내용
+
+5. 관리자 → 상품등록 → 상품재고 → 구매내용확인 → 회원및 관리
+
+DB
+
+database : shop
+프로젝트 : shop
+
+패키지 
+상품관련 : product
+회원가입 : member
+관리자 : admin
+로그인 : login
+회원정보 : mypage
+
+view
+메인 : main
+상품관련 : product
+회원가입 : member
+관리자 : admin
+로그인 : login
+회원정보 : mypage
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+대분류 table
+id int auto_increment primary key
+code char(2)
+title char(50)
+
+중분류 table
+id int auto_increment primary key
+code char(2)
+title char(50)
+daecode char(2)
+
+소분류 table
+id int auto_incerment primary key
+code char(2)
+title char(50)
+daejung char(4)
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+상품테이블 product
+
+id int auto_increment primary key
+pcode char(10) unique : p01010100?
+pimg varchar(100)       : 메인이미지
+cimg varchar(100)       : 제품상세내용이미지
+title varchar(100)        : 상품제목
+price int                    : 가격
+made varchar(100)      : 제조회사
+halin int                    : 할인률
+juk int                      : 적립포인트
+su int                       : 상품수량
+baesong int              : 배송비
+baeday int                : 오늘기준 배송일
+pstar int                   : 별점
+writeday date            : 등록일
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

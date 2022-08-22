@@ -111,4 +111,8 @@
 		<item value="org.springsource.sts.package:3.9.1.201710111105-RELEASE-e47"/>
 		<item value="org.springsource.sts:3.9.1.201710111105-RELEASE"/>
 	</list>
+	<section name="ResourceNavigator">
+		<item value="" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
+		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
+	</section>
 </section>

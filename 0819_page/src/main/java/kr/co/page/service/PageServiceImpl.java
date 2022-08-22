@@ -74,8 +74,8 @@ public class PageServiceImpl implements PageService {
 		
 		mapper.readnum(pvo.getId());
 		String sword = pvo.getSword();
-		sword = URLEncoder.encode(sword);
-
+		sword = URLEncoder.encode(sword); // jsp 파일이없는 한글은 인코딩이 필요할수도 있음
+		// list.jsp -> controller -> readnum.java -> content.jsp 
 		return "redirect:/content?id="+pvo.getId()+"&pcnt="+pvo.getPcnt()+"&page="+pvo.getPage()+"&sel="+pvo.getSel()+"&sword="+sword;
 	}
 	
